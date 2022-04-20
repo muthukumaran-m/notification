@@ -3,8 +3,27 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
-  <router-view/>
+  <router-view />
 </template>
+
+<script>
+/* eslint-disable */
+export default {
+  mounted() {
+    Notification.requestPermission(function (permission) {
+      if (permission === "granted") {
+        navigator.serviceWorker.ready.then(function (registration) {
+          registration.showNotification("title", {
+            body: "body",
+            icon: "icon",
+            tag: "message-received",
+          });
+        });
+      }
+    });
+  },
+};
+</script>
 
 <style lang="scss">
 #app {
