@@ -9,7 +9,7 @@ self.addEventListener('message', (event) => {
         self.skipWaiting();
     }
 });
-
+console.log("sw registered");
 self.addEventListener('notificationclick', function (event) {
     let url = 'https://google.com';
     event.notification.close(); // Android needs explicit close.
