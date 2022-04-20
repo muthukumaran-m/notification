@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunknotificationtest"]=self["webpackChunknotificationtest"]||[]).push([[443],{7381:function(t,n,i){i.r(n),i.d(n,{default:function(){return l}});var a=i(3396);const e={class:"about"},s=(0,a._)("h1",null,"This is an about page",-1),u=[s];function c(t,n){return(0,a.wg)(),(0,a.iD)("div",e,u)}var o=i(89);const r={},f=(0,o.Z)(r,[["render",c]]);var l=f}}]);
+//# sourceMappingURL=about.cc6f7536.js.map
